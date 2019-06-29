@@ -1,0 +1,94 @@
+\version "2.18.2"
+
+\header{
+	title = "Alexander Borodin"
+	subtitle = "Polovtsian Dances"
+	instrument = "Triangolo"
+	subsubtitle = "No 8"
+}
+
+\relative c'' {
+	\time 6/8 
+	\compressFullBarRests
+	e4\f r8 r4 r8 | R2.*11 |
+	\repeat volta 2{
+		R2.*4
+	}
+	\repeat volta 2{
+		R2.*4
+	}
+	\mark \default R2.*24 | %MARKING A
+	\mark \default %MARKING B
+	<<
+		\voiceOne{R1*6/8 | R1*6/8 | r4 r8^\markup "1" e4.\pp }
+		\new CueVoice {
+			\acciaccatura fis,,16_\markup{\right-align \small "Clar."} g4.\acciaccatura {fis16} g4. | \acciaccatura {fis16} g4.  \acciaccatura {fis16} g4.  | \acciaccatura {fis16} g4. s4.
+		}
+	>>
+	r4 r8^\markup "2" e''4. | r4 r8^\markup "3" e4. | r4 r8^\markup "4" e4. |
+	r4 r8^\markup "5" e4. | r4 r8^\markup "6" e4. | r4 r8^\markup "7" e4. |
+	r4 r8^\markup "8" e4. | r4 r8^\markup "9" e4. | r4 r8^\markup "10" e4. |
+	r4 r8^\markup "11" e4. | r4 r8^\markup "12" e4. | r4 r8^\markup "13" e4. |
+	r4 r8^\markup "14" e4. | r4 r8^\markup "15" e4. | r4 r8^\markup "16" e4. |
+
+	\mark \default %MARKING C
+		\time 2/4 e4:16\p e8^\markup "1" r8 | e4:16 e8^\markup "2" r8 |
+		e4:16 e8^\markup "3" r8 | e4:16 e8^\markup "4" r8 |
+		e4:16 e8^\markup "5" r8 | e4:16 e8^\markup "6" r8 |
+		e4:16 e8^\markup "7" r8 | e4:16 e8^\markup "8" r8 |
+		e4:16 e8^\markup "9" r8 | e4:16 e8^\markup "10" r8 |
+		e4:16 e8^\markup "11" r8 | e4:16 e8^\markup "12" r8 |
+		e4:16 e8^\markup "13" r8 | e4:16 e8^\markup "14" r8 |
+		e4:16 e8^\markup "15" r8 | e4:16 e8^\markup "16" r8 |
+		e4:16 e8^\markup "17" r8 | e4:16 e8^\markup "18" r8 |
+		e4:16 e8^\markup "19" r8 | e4:16 e8^\markup "20" r8 |
+	\mark \default %MARKING D
+		\time 6/8 e2.:16_\markup{\small \italic \right-align "poco"}\f^\markup "1" | 
+		e2.:16^\markup "2" | e2.:16^\markup "3" | e2.:16^\markup "4" | e2.:16^\markup "5" | 
+		e2.:16^\markup "6" | e2.:16^\markup "7" | e4.:16 e8 r r \bar "||"
+		\repeat volta 2 {R2.*4}
+		<<
+			\voiceOne{ R1*6/8 | R1*6/8 | R1*6/8 |}
+			\new CueVoice{r4_\markup{\small "Piatti"} r8 a,4. | s2. | r4 r8 a4.}
+		>>
+		R1*6/8 | e'4.\p r4^\markup "1" r8 | e4. r4^\markup "2" r8 | e4. r4^\markup "3" r8 |
+		e4. r4^\markup "4" r8 | e4. r4^\markup "5" r8 | e4. r4^\markup "5" r8 | e4. r4^\markup "6" r8 | e4. r4^\markup "7" r8 | e4. r4^\markup "8" r8 |
+		R2.*4 | e2.:16 | e2.:16 | e4 r8 r4 r8 | R2.*3 |
+	\mark \default %MARKING E
+		R2.*2 | r4 r8\pp^\markup "1" e4. | r4 r8\pp^\markup "2" e4. |
+		r4 r8\pp^\markup "3" e4. | r4 r8\pp^\markup "4" e4. | 
+		r4 r8\pp^\markup "5" e4. | r4 r8\pp^\markup "6" e4. |
+		r4 r8\pp^\markup "7" e4. | r4 r8\pp^\markup "8" e4. |
+	\mark \default %MARKING F
+		\time 2/4 
+		e4:16 e8^\markup "1" r8 | e4:16 e8^\markup "2" r8 |
+		e4:16 e8^\markup "3" r8 | e4:16 e8^\markup "4" r8 |
+		e4:16 e8^\markup "5" r8 | e4:16 e8^\markup "6" r8 |
+		e4:16 e8^\markup "7" r8 | e4:16 e8^\markup "8" r8 |
+		e4:16 e8^\markup "9" r8 | e4:16 e8^\markup "10" r8 |
+		e4:16 e8^\markup "11" r8 | e4:16 e8^\markup "12" r8 |
+		e4:16 e8^\markup "13" r8 | e4:16 e8^\markup "14" r8 |
+		e4:16 e8^\markup "15" r8 | e4:16 e8^\markup "16" r8 |
+		\crescTextCresc e4:16\< e8^\markup "17" r8 | e4:16 e8^\markup "18" r8_\markup{\small \italic "poco"} |
+		e4:16 e8^\markup "19" r8 | e4:16 e8^\markup "20" r8 |
+		e4:16 e8^\markup "21"_\markup{\small \italic "a"} r8 | e4:16 e8^\markup "22" r8 |
+		e4:16_\markup{\small \italic "poco"} e8^\markup "23" r8 | e4:16 e8^\markup "24" r8 |
+		e2:16 | e2:16 | e2:16 | e2:16 |
+	\mark \default %MARKING G
+		\time 6/8
+			e4\f r8 e4^\markup "1" r8 | e4 r8 e4^\markup "2" r8 |
+			e4 r8 e4^\markup "3" r8 | e4 r8 e4^\markup "4" r8 | 
+			e4 r8 e4^\markup "5" r8 | e4 r8 e4^\markup "6" r8 |
+			e4 r8 e4^\markup "7" r8 | e4 r8 e4^\markup "8" r8 |
+			e4 r8 r4. | R2.*1 | e4 r8 r4 r8 | R2.*3 |
+	\mark \default %MARKING H 
+		R2.*2 | e4 r8 r4 r8 | e4 r8 r4 r8 | e4 r8 r4 r8 | e4 r8 r4 r8 |
+		R2.*4 
+		\time 2/4 e4:16 e8 r8 | e4:16 e8 r8 | 
+		\time 6/8 R1*12/8 
+		\time 2/4 e4:16 e8 r8 | e4:16 e8 r8 | 
+		\time 6/8 R1*12/8 
+		\time 2/4 e4:16\p\< e8 r8 | e4:16 e8 r8 | 
+		e2:16 | e:16 
+		\time 6/8 e2.:16\mf | e2.:16 | e2.:16 | e2.:16 | e4\sf r8 r4 r8 | R1*6/8 \bar "||"
+}
