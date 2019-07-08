@@ -56,8 +56,16 @@ vlnTwo =
 		\key f\major
 		R1*16 | 
 		<<
-			\new CueVoice{\voiceOne ges''8^\markup {\tiny Fl.} ges~ ges16( aes ges f) ees( f ees des) c( des ees g) | g8( aes) f4~ f8 g?( aes c) }
-			{\voiceTwo r1 | r1 |}
+			\new CueVoice{
+				\voiceOne 
+				ges''8^\markup {\tiny Fl.} ges~ ges16( aes ges f) ees( f ees des) c( des ees ges) | 
+				f8.( aes16 f4)~ f8 g?( aes c) | 
+			}
+			{
+				\voiceTwo 
+				r1 | 
+				r1 |
+			}
 		>>
 		
 		\mark \default %C
@@ -104,7 +112,7 @@ vlnTwo =
 		R1*3 | 
 		\repeat unfold 2 {\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. b-. |}
 
 		
@@ -116,12 +124,12 @@ vlnTwo =
 		
 		\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis''4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis''4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. b-. |
 		
 		\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis'4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis'4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. r4 | 
 
 		\mark \default %E 
@@ -152,12 +160,12 @@ vlnTwo =
 		\barNumberCheck #171
 		\absolute {fis'8 r8 <d' a' a''>4->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis''4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis''4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. b-. |
 
 		\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis'4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis'4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. b-. |
 		
 		cis,,\f-. cis->( d) | \tuplet 3/2 {f8->( e d} cis4-.) cis-. |
@@ -167,7 +175,7 @@ vlnTwo =
 		
 		\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
 		r4 <d' a' cis'''>->(d'''8) r8 | r4 <d' a' d'''>->( e'''8) r8 |}
-		r4 fis''4.->(g8) | g(f-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
+		r4 fis''4.->(g8) | g(fis-.) f(eis-.) eis(e-.) | e(dis-.) dis(d-.) d(cis-.) |
 		cis\trill(b-.) b4-. b-. |
 	
 		\absolute {r4 <d' a' a''>->\ff(b''8 ) r8 | r4 <d' a' b''>->( cis'''8) r8 | 
@@ -176,7 +184,7 @@ vlnTwo =
 		r4 a'4.->(b8) | b(a-.) a(gis-.) gis(g-.) | g(fis-.) fis(f-.) f(e-.) |
 	
 		e\trill(d-.) d4-. d-. |
- 			
+
 		\mark \default %G 
 		\ottava #0
 		
@@ -202,38 +210,38 @@ vlnTwo =
 		\repeat unfold 14 {<a f'>-.)[r8 <a f'>-.(] <a f'>-.)[r8 <a f'>-.(] }
 		\stopMeasureCount
 		a-.\<)[r8 a-.(] a-.)[r8 a-.(] | a-.)[r8 a-.(] a-.)[r8 a-.(] | 
-				 
-		 \mark \default %K
-		 a8\ff) r8 d' <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d \upbow ees( f ees) | d( ees d) c( d c) |
-		 d-.( r8 d-.) <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d\upbow ees( f ees) | d( ees d) c( d c) |
-		 bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d) c(d c) |
-		 bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d cis d dis) | 
-		 e( f e d e d) | c( d c b c d) | e( f e d e d) | c( d c b c d) |
-		 
-		 \mark \default %L
+		
+		\mark \default %K
+		a8\ff) r8 d' <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d \upbow ees( f ees) | d( ees d) c( d c) |
+		d-.( r8 d-.) <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d\upbow ees( f ees) | d( ees d) c( d c) |
+		bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d) c(d c) |
+		bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d cis d dis) | 
+		e( f e d e d) | c( d c b c d) | e( f e d e d) | c( d c b c d) |
+		
+		\mark \default %L
 		e( fis e dis e dis) | cis( dis cis bis cis dis) |
 		e( fis e dis e dis) | cis( dis cis bis cis e) |
 		f( g f e f e) | d( e d cis d e) |	f( g f e f e) | d( e d cis d e) |
 		f r8 r8 f,\f^\markup {\tiny "pizz."} r8 r8 | 
 		d' r r f r r | d' r r r4 r8 | 
 		R1*3/4 |
-		 f,,2.\sfp\startTrillSpan^\markup {\tiny "arco"}~ | f2.\stopTrillSpan
-		 gis\sfp\startTrillSpan~ | gis |
-		 c\sfp\startTrillSpan~ | c |
-		 b8-.\stopTrillSpan r r r4 r8 | R1*3/4 |
-	 
-		 \time 2/4 
-		 <a c>16->^\markup {\tiny "div"}\f( <gis b> <a c> <gis b> <a c>8) r8 |
-		 <a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | g8 r8 r4 | R1*1/2 |
-		 <a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
-		 <a c>16->( <gis b> <a c> <gis b> <a c>8) r8 |  g8 r8 r4 | R1*1/2 |
-		 <a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
-		 <a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
-		 
-		 <fis a>16->( <eis gis> <fis a> <eis gis> <fis a>8) r8 |
-		 <fis a>16->( <eis gis> <fis a> <eis gis> <fis a>8) r8 |
-		 <e g>16->( <dis fis> <e g> <dis fis> <e g>8) r8 |
-		 <e g>16->( <dis fis> <e g> <dis fis> <e g>8) r8 | \bar "||"
+		f,,2.\sfp\startTrillSpan^\markup {\tiny "arco"}~ | f2.\stopTrillSpan
+		gis\sfp\startTrillSpan~ | gis |
+		c\sfp\startTrillSpan~ | c |
+		b8-.\stopTrillSpan r r r4 r8 | R1*3/4 |
+	
+		\time 2/4 
+		<a c>16->^\markup {\tiny "div"}\f( <gis b> <a c> <gis b> <a c>8) r8 |
+		<a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | g8 r8 r4 | R1*1/2 |
+		<a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
+		<a c>16->( <gis b> <a c> <gis b> <a c>8) r8 |  g8 r8 r4 | R1*1/2 |
+		<a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
+		<a c>16->( <gis b> <a c> <gis b> <a c>8) r8 | 
+		
+		<fis a>16->( <eis gis> <fis a> <eis gis> <fis a>8) r8 |
+		<fis a>16->( <eis gis> <fis a> <eis gis> <fis a>8) r8 |
+		<e g>16->( <dis fis> <e g> <dis fis> <e g>8) r8 |
+		<e g>16->( <dis fis> <e g> <dis fis> <e g>8) r8 | \bar "||"
 
 		\mark \default %M
 		\key c\major 
@@ -307,9 +315,9 @@ vlnTwo =
 		\mark \default %R
 		\barNumberCheck #469
 		a8\ff r8 d' <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d\upbow ees( f ees) | d( ees d) c( d c) |
-		 d-.( r8 d-.) <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d\upbow ees( f ees) | d( ees d) c( d c) |
-		  bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d) c(d c) |
-		 bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d cis d ees) | 
+		d-.( r8 d-.) <a a'>4.->~ | <a a'>8 f'( a g f ees | d) r d\upbow ees( f ees) | d( ees d) c( d c) |
+		bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d) c(d c) |
+		bes-.( r8 bes-.) f'4.->~ | f8 d( f ees d c | bes8) r8 bes\upbow ees( f ees) | d(ees d cis d ees) | 
 		d( ees d c d c) | bes( c bes a bes c) | d( ees d c d c) bes( c bes a bes c) |
 		
 		\mark \default %S

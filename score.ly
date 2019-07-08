@@ -5,6 +5,12 @@
 	title = "Polovtsian Dances"
 	subtitle = "Score"
 }
+pizz = \markup{\tiny "pizz."}
+arco = \markup{\tiny "arco"}
+tcresc = \markup{\tiny "cresc."}
+icresc = \markup{\tiny \italic "cresc."}
+mbreak = \break
+
 \include "Vln1.ly"
 \include "Vln2.ly"
 \include "vla.ly"
@@ -18,17 +24,6 @@
 
 specialOne = \markup {\concat {\dynamic "ppp" \tiny \italic "cresc poco a poco"}}
 specialTwo = \markup {\concat {\dynamic "p" \tiny \italic "cresc"}}
-
-\layout {
-	\context {
-		\Staff
-		\consists #Measure_counter_engraver
-	}
-	\context {
-		\Staff \RemoveEmptyStaves
-		\override VerticalAxisGroup.remove-first = ##t
-	}
-}
 
 \score {
 <<
@@ -103,7 +98,20 @@ specialTwo = \markup {\concat {\dynamic "p" \tiny \italic "cresc"}}
 			}
 		>>
 >>
+	\midi {}
+	\layout {
+		\context {
+			\Staff
+			\consists #Measure_counter_engraver
+		}
+		\context {
+			\Staff \RemoveEmptyStaves
+			\override VerticalAxisGroup.remove-first = ##t
+		}
+	}
 }
+
+
 \paper {
     system-separator-markup = \slashSeparator
 	left-margin = 0.75\in

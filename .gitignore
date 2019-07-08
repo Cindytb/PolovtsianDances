@@ -1,2 +1,4 @@
 *.pdf
 .vscode/ipch/*
+*.midi
+Midi\ Demo/*
